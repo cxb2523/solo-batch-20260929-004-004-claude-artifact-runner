@@ -32,6 +32,7 @@
     "build:single:strict": "tsc -b && vite build -c vite.single.config.ts",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "test:registry": "node node_modules/esbuild/bin/esbuild scripts/test-registry.ts --bundle --platform=node --format=cjs --target=node20 --outfile=node_modules/.tmp/test-registry.cjs --log-level=warning && node node_modules/.tmp/test-registry.cjs",
     "publish:npx": "node npx/publish.js"
   },
   "dependencies": {

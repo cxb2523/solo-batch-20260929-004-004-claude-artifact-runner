@@ -1,0 +1,12 @@
+export default function HelloWorld() {
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-50">
+      <div className="text-center space-y-3">
+        <h1 className="text-3xl font-bold">Hello World</h1>
+        <p className="text-muted-foreground">
+          已注册的示例 Artifact：从注册表管理页导入新的 .tsx 文件。
+        </p>
+      </div>
+    </div>
+  );
+}
